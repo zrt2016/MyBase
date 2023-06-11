@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_view.custom_basic.canvas_basic.SurfaceViewActivity">
+    <ScrollView
+        android:id="@+id/a_c_b_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.RectRefreshSurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="使用SurfaceView 实现手势轨迹View"/>
+            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.GesturePathSurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="使用SurfaceView 实现背景平移View"/>
+            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.AnimaSurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.DoubleBufferSurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

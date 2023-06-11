@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".notification.NotificationActivity">
+    <Button
+        android:id="@+id/a_n_cancelALL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Cancel All" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示一个普通通知" />
+        <Button
+            android:id="@+id/a_n_cancelNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Cancel" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示长文本通知" />
+        <Button
+            android:id="@+id/a_n_cancelNotice_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice_style_p"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示大图通知" />
+        <Button
+            android:id="@+id/a_n_cancelNotice_style_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice_high"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示高权限通知" />
+        <Button
+            android:id="@+id/a_n_cancelNotice_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示进度通知" />
+        <Button
+            android:id="@+id/a_n_sendNotice_progress_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新进度" />
+        <Button
+            android:id="@+id/a_n_cancelNotice_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel " />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice_custom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示自定义通知" />
+        <Button
+            android:id="@+id/a_n_cancelNotice_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel " />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice_reply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示回复消息的通知" />
+        <Button
+            android:id="@+id/a_n_cancelNotice_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel " />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice_banner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示横幅通知" />
+        <Button
+            android:id="@+id/a_n_cancelNotice_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel " />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice_changzhu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示常驻通知" />
+        <Button
+            android:id="@+id/a_n_cancelNotice_changzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel " />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice_custom2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示自定义通知2" />
+        <Button
+            android:id="@+id/a_n_cancelNotice_custom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel " />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/a_n_sendNotice_suspension"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示悬挂通知" />
+        <Button
+            android:id="@+id/a_n_cancelNotice_suspension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel " />
+    </LinearLayout>
+</LinearLayout>

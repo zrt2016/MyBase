@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--  checkableBehavior="single"该组内所有属性只能单选  -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navCall"
+            android:icon="@mipmap/nav_call"
+            android:title="Call" />
+        <item
+            android:id="@+id/navFriends"
+            android:icon="@mipmap/nav_friends"
+            android:title="Friends" />
+        <item
+            android:id="@+id/navLocation"
+            android:icon="@mipmap/nav_location"
+            android:title="Location" />
+        <item
+            android:id="@+id/navMail"
+            android:icon="@mipmap/nav_mail"
+            android:title="Mail" />
+        <item
+            android:id="@+id/navTask"
+            android:icon="@mipmap/nav_task"
+            android:title="Tasks" />
+    </group>
+    <item android:title="其他">
+        <menu>
+            <item android:icon="@mipmap/ic_settings"
+                android:title="设置"/>
+        </menu>
+    </item>
+</menu>

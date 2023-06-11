@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_view.custom_basic.view_basic.CustomViewTwoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ViewGtoup 竖直添加控件"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:shadowRadius="2"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowColor="@color/red"/>
+            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.BasicViewGroup
+                android:id="@+id/a_c_v_two_bvg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="第一个View"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="第二个View"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="第三个View"/>
+            </com.zrt.kotlinapp.activity_view.custom_basic.view_basic.BasicViewGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="流式布局"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.CustomFlowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/a_c_V_two_flow">
+                <TextView
+                    style="@style/text_flag_01"
+                    android:background="@drawable/flow_layout_flag_03"
+                    android:text="Welcome"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    style="@style/text_flag_01"
+                    android:background="@drawable/flow_layout_flag_03"
+                    android:text="IT工程师"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    style="@style/text_flag_01"
+                    android:background="@drawable/flow_layout_flag_03"
+                    android:text="我真是可以的"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    style="@style/text_flag_01"
+                    android:background="@drawable/flow_layout_flag_03"
+                    android:text="你觉得呢"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    style="@style/text_flag_01"
+                    android:background="@drawable/flow_layout_flag_03"
+                    android:text="不要只知道挣钱"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    style="@style/text_flag_01"
+                    android:background="@drawable/flow_layout_flag_03"
+                    android:text="努力ing"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    style="@style/text_flag_01"
+                    android:background="@drawable/flow_layout_flag_03"
+                    android:text="I thick i can"
+                    android:textColor="@android:color/white" />
+            </com.zrt.kotlinapp.activity_view.custom_basic.view_basic.CustomFlowLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.CustomFlowLayout2
+                android:id="@+id/a_c_V_two_flow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.zrt.kotlinapp.activity_view.custom_basic.view_basic.CustomFlowLayout2>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+            <TextView
+                android:id="@+id/a_c_v_two_gesture"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

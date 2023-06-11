@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zrt.kotlinapp">
+    <!-- 实现开机启动功能 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 读取联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- android 9.0 后，前台Service需要进行权限声明 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 开起网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity_view.custom_basic.view_basic.CustomViewTwoActivity"></activity>
+        <activity android:name=".activity_view.custom_basic.matrix_basic.MatrixBasicActivity" />
+        <activity android:name=".activity_view.custom_basic.canvas_basic.SurfaceViewActivity" />
+        <activity android:name=".activity_view.EditTextActivity" />
+        <activity android:name=".activity_view.custom_basic.canvas_basic.CanvasBasicActivity" />
+        <activity android:name=".activity_view.custom_basic.paint_basic.PaintMixedModeActivity" />
+        <activity android:name=".activity_view.custom_basic.view_basic.MappingAdvancedActivity" />
+        <activity android:name=".activity_view.custom_basic.bezier_basic.BezierCurveActivity" />
+        <activity android:name=".activity_view.custom_basic.paint_basic.PaintBasicActivity" />
+        <activity android:name=".animator.path_measure.PathMeasureActivity" />
+        <activity android:name=".animator.property_animation.PropertAdvancedActivity" />
+        <activity android:name=".animator.demo.PathAnimationActivity" />
+        <activity android:name=".animator.demo.ScannerAnimationActivity" />
+        <activity android:name=".animator.demo.LoadingAnimationActivity" />
+        <activity android:name=".animator.demo.SplashAnimationActivity" />
+        <activity android:name=".animator.property_animation.PropertyAnimationActivity" />
+        <activity android:name=".animator.view_animation.ViewAnimationActivity" />
+        <activity android:name=".animator.AnimationBasicActivity" />
+        <activity android:name=".activity_view.custom_basic.view_basic.MappingBasicActivity" />
+        <activity android:name=".activity_view.custom_basic.CustomViewNavigationActivity" />
+        <activity android:name=".activity_view.custom_basic.view_basic.CustomViewActivity" />
+        <activity android:name=".activity_view.custom_basic.view_shijianfenfa.ViewEventActivity" />
+        <activity android:name=".animator.AnimatorActivity" />
+        <activity android:name=".activity_view.custom_basic.ViewScrollActivity" />
+        <activity
+            android:name=".activity_view.material_design.CoordinatorActivity"
+            android:label="Coordinator Activity"
+            android:theme="@style/NoAppTheme_Light" />
+        <activity android:name=".activity_view.material_design.ViewPager2Activity" />
+        <activity
+            android:name=".activity_view.material_design.TabLayoutActivity"
+            android:label="TabLayout Activity"
+            android:theme="@style/NoAppTheme_Light" />
+        <activity android:name=".activity_view.material_design.MaterialActivity" />
+        <activity
+            android:name=".activity_view.material_design.demo.DrawerToolbarActivity"
+            android:label="DrawerToolbar Activity"
+            android:theme="@style/NoAppTheme_Light" />
+        <activity android:name=".activity_view.material_design.MCardTwoActivity" />
+        <activity android:name=".activitys.CallPhoneActivity" />
+        <activity android:name=".jetpack.RoomActivity" />
+        <activity android:name=".jetpack.ViewModeActivity" />
+        <activity
+            android:name=".activity_view.material_design.CollapsingToolbarActivity"
+            android:label="CollapsingToolbar Activity"
+            android:theme="@style/NoAppTheme_StatusBar" />
+        <activity
+            android:name=".activity_view.material_design.SwiperefreshActivity"
+            android:label="Swiperefresh Activity"
+            android:theme="@style/NoAppTheme_Material_Light" />
+        <activity
+            android:name=".activity_view.material_design.MaterialCardActivity"
+            android:label="MaterialCard Activity"
+            android:theme="@style/NoAppTheme_Material_Light" />
+        <activity
+            android:name=".activity_view.material_design.FloatActionButtonActivity"
+            android:label="NavigationView Activity"
+            android:theme="@style/NoAppTheme_Material_Light" />
+        <activity
+            android:name=".activity_view.material_design.NavigationViewActivity"
+            android:label="NavigationView Activity"
+            android:theme="@style/NoAppTheme_Material_Light" />
+        <activity
+            android:name=".activity_view.material_design.DrawerActivity"
+            android:label="DrawerLayout Activity"
+            android:theme="@style/NoAppTheme_Light" />
+        <activity
+            android:name=".activity_view.material_design.ToolbarActivity"
+            android:label="Toolbar Activity"
+            android:theme="@style/NoAppTheme" />
+        <activity android:name=".activitys.JsonXmlActivity" />
+        <activity android:name=".activitys.HttpActivity" />
+        <activity android:name=".webviews.WebViewActivity" />
+
+        <service
+            android:name=".services.MyIntentService"
+            android:exported="false" />
+
+        <activity android:name=".services.ServiceActivity" />
+        <activity android:name=".activitys.threads.ThreadActivity" />
+        <activity android:name=".activitys.VideoViewActivity" />
+        <activity android:name=".activitys.MediaPlayerActivity" />
+        <activity android:name=".activitys.camera.CameraActivity" />
+        <activity android:name=".notification.NotificationActivity" />
+        <activity android:name=".contentproviders.VisitSQLiteDBActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".contentproviders.ContactsActivity" />
+        <activity android:name=".storage.SQLiteActivity" />
+        <activity android:name=".storage.StorageActivity" />
+        <activity android:name=".broadcasts.BCActivity" />
+        <activity android:name=".fragment.NewsTitleActivity" />
+        <activity android:name=".fragment.NewsContentActivity" />
+        <activity android:name=".fragment.LargeActivity" />
+        <activity android:name=".fragment.FTwoActivity" />
+        <activity android:name=".fragment.FOneActivity" />
+        <activity android:name=".activity_view.recyclerview.chat.ChatInterfaceActivity" />
+        <activity android:name=".activity_view.recyclerview.RecyclerViewSGLActivity" />
+        <activity android:name=".activity_view.recyclerview.RecyclerViewHActivity" />
+        <activity android:name=".activity_view.recyclerview.RecyclerViewActivity" />
+        <activity android:name=".activity_view.listview.LVActivity" />
+        <activity android:name=".activity_view.actionbar.TitleActivity" />
+        <activity android:name=".activity_view.UIActivity" />
+        <activity android:name=".activitys.intents.IntentBrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.intents.IntentOneActivity" />
+        <activity android:name=".activitys.intents.IntentTwoActivity">
+            <intent-filter>
+                <action android:name="com.zrt.kotlinapp.ACTION_START" />
+                <!-- 默认category -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 自定义category -->
+                <category android:name="com.zrt.kotlinapp.MY_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.intents.IntentActivity" />
+        <activity
+            android:name=".activity_view.MenuActivity"
+            android:label="This is MenuActivity" />
+        <activity
+            android:name=".FirstActivity"
+            android:label="This is firstActivity" /> <!-- enabled: 是否启用这个BootcastReceiver广播 -->
+        <!-- exported：是否允许BootcastReceiver接收本程序以外的广播 -->
+        <receiver
+            android:name=".broadcasts.BootcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcasts.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+                <action android:name="com.zrt.kotlinapp.broadcasts.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcasts.AnotherBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zrt.kotlinapp.broadcasts.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".notification.ReplyMessageReceiver" />
+
+        <provider
+            android:name=".contentproviders.MyProvider"
+            android:authorities="com.zrt.kotlinapp.provider"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.zrt.kotlinapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".services.MyService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

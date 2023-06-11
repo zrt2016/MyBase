@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yizhu_tab_rb_today"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_underline"
+    android:button="@null"
+    android:gravity="center"
+    android:padding="5dp"
+    android:text="今日"
+    android:checked="true"
+    android:textColor="@color/grey_light"
+    android:textSize="@dimen/rg_top_title" />

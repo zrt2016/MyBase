@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="violet">#FF9C9CD8</color>
+    <color name="violet_dark">#FF6D6EAA</color>
+
+    <color name="colorPrimary">#FF9C9CD8</color>
+    <color name="colorPrimaryDark">#FF9C9CD8</color>
+    <color name="colorAccent">#FF9C9CD8</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#ffd3dde6</color>
+    <color name="griditems_background">#FFE8ECEF</color>
+</resources>

@@ -1,0 +1,154 @@
+// 一般由两种声明..application表示是一个应用程序模块，..library表示这是一个库模块
+apply plugin: 'com.android.application'
+// 如果只用java，以下两项无需添加
+// 表示可以使用Kotlin进行编程
+apply plugin: 'kotlin-android'
+// 帮助实现Kotlin的扩展功能
+apply plugin: 'kotlin-android-extensions'
+// 引入Room编译时的注解库， java中使用annotationProcessor
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 30 // 指定项目的编译版本
+    buildToolsVersion '30.0.0' // 指定项目构建工具的版本
+    // 默认配置
+    defaultConfig {
+        applicationId "com.zrt.kotlinapp" // 每个应用的唯一标识符，不能重复
+        minSdkVersion 19 // 指定项目最低兼容的Android版本(此处21表示最低兼容到Android5.0版本)
+        targetSdkVersion 30 // 指定可兼容的最高版本
+        versionCode 1 // 项目版本号
+        versionName "1.0" // 项目的版本名
+//        manifestPlaceholders = [CHANNEL_VALUE: "kotlinapp"]//AndroidManifest.xml 里渠道变量
+//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // 用于在当前项目中启用JUnit测试
+        multiDexEnabled true//支持dex分包
+//        flavorDimensions "default"//默认渠道
+//        resConfigs "en"//只保留默认的国际化标准
+        vectorDrawables.useSupportLibrary = true
+    }
+    signingConfigs {
+        config {
+            storeFile file('appkeys.jks')
+            storePassword '12345678'
+            keyAlias 'appkeys'
+            keyPassword '12345678'
+        }
+    }
+    //多渠道打包
+//    productFlavors {
+//        kotlinapp {
+//            applicationId "com.zrt.kotlinapp"
+////            resValue "string", "app_name", "KotlinApp"
+//            manifestPlaceholders = [CHANNEL_VALUE: "kotlinapp"]
+//        }
+//        newkotlinapp {
+//            applicationId "com.zrt.kotlinappnew"
+////            resValue "string", "app_name", "KotlinAppNew"
+//            manifestPlaceholders = [CHANNEL_VALUE: "newkotlinapp"]
+//        }
+//    }
+
+    // 指定生成安装文件的配置
+    buildTypes {
+        // 通常只会有2个子闭包，一个debug（用来测试），一个是release
+        release {
+            minifyEnabled false // 指定是否对项目的代码进行混淆，true表示混淆。false表示不混淆
+            // 指定混淆时使用的规则文件
+            // 1、proguard-android-optimize.txt是在<android sdk>/tools/proguard目录下，里面是所有项目的通用混淆规则
+            // 2、proguard-rules.pro 当前项目的根目录下，里面可以编写当前项目特有的混淆规则
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+//        debug {
+//            //debug时候也采用正式签名文件
+//            signingConfig signingConfigs.config
+//        }
+    }
+
+    //移除lint检测的error
+//    lintOptions {
+//        checkReleaseBuilds false
+//        abortOnError false
+//    }
+//    aaptOptions {
+//        //防止java.io.FileNotFoundException: This file can not be opened as a file descriptor; it is probably compressed
+//        noCompress 'mp3', 'aac', 'mp4', 'wav'
+//        cruncherEnabled false //用来关闭Android Studio的PNG合法性检查的，直接不让它检查。
+//        useNewCruncher(false)
+//    }
+    compileOptions {//指明使用的JDK版本
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+//    // 批量打包
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (output.name == 'release') {
+////            variant.packageApplicationProvider.get().outputDirectory = new File(project.rootDir.absolutePath + "/app")
+//            //输出apk名称为：版本名_版本code_时间.apk
+//            def fileName = "MiChat_v${defaultConfig.versionName}_code${defaultConfig.versionCode}_release.apk"
+////            output.outputFileName = fileName
+//                output.outputFile = new File(outputFile.parent, fileName)
+//            }
+//        }
+//    }
+}
+// 指定当前项目所有的依赖关系
+// Android studio有3中依赖方式：本地依赖、库依赖和远程依赖
+// 1、本地依赖：对本地的jar包或目录添加依赖关系（implementation fileTree）
+// 2、库依赖：对项目中的库模块添加依赖关系。（implementation project）
+// 3、远程依赖：可以堆jcenter仓库上的开源项目添加依赖关系（implementation）
+dependencies {
+    // implementation fileTree：本地依赖声明，表示将libs目录下所有.jar后缀的文件添加到项目的构建路径中
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.1.0'
+    // implementation: 远程依赖
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    // 5.0之前需要导入 矢量图 包支持
+    implementation 'com.android.support:appcompat-v7:23.2.0'
+    // implementation project: 库依赖
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    // viewpager2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    // 调用RegisterForActivityResult方法
+    implementation 'androidx.activity:activity-ktx:1.2.1'
+    implementation 'androidx.fragment:fragment-ktx:1.3.1'
+
+    // okhttp3
+//    implementation 'com.squareup.okhttp3:okhttp:4.1.0' // 只支持API 21的,在19上会报错
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0' //
+    implementation 'com.google.code.gson:gson:2.8.5'
+    // retrofit2 网络框架
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    // Kotlin的协程
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1'
+    // Android项目中使用Kotlin的协程
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1'
+    // 添加material库引用
+//    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha03'
+    // 添加开源项目CircleImageView的引用 轻松实现图片圆形化的功能
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // glide添加图片加载库
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-extensions:2.1.0"
+    // 引入Room库
+    implementation "androidx.room:room-runtime:2.1.0"
+    kapt "androidx.room:room-compiler:2.1.0"
+    //添加WorkManager管理引用
+    implementation "androidx.work:work-runtime:2.2.0"
+    // 引入自定义的权限申请lib包
+    implementation project(':permissionlibrary')
+    // 动态提取图片颜色
+    implementation 'androidx.palette:palette:1.0.0'
+//    compile 'com.android.support:palette-v7:23.0.1'
+}

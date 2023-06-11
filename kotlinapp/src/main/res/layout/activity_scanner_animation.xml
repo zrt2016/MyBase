@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context=".animator.demo.ScannerAnimationActivity">
+    <ImageView
+        android:id="@+id/a_s_a_circle1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/scanner_circle"/>
+    <ImageView
+        android:id="@+id/a_s_a_circle2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:src="@drawable/scanner_circle"/>
+    <ImageView
+        android:id="@+id/a_s_a_circle3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:src="@drawable/scanner_circle"/>
+    <ImageView
+        android:id="@+id/a_s_a_circle4"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:src="@drawable/scanner_circle"/>
+
+    <ImageView
+        android:id="@+id/a_s_a_start"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:src="@mipmap/scan_cover"/>
+</RelativeLayout>

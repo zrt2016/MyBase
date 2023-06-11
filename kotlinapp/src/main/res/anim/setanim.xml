@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:duration="5000">
+    <alpha
+        android:fromAlpha="0.3"
+        android:toAlpha="1.0"/>
+    <scale
+        android:fromXScale="0.0"
+        android:toXScale="1.2"
+        android:fromYScale="0.0"
+        android:toYScale="1.2"
+        android:pivotX="50%"
+        android:pivotY="50%"/>
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="720"
+        android:pivotX="50%"
+        android:pivotY="50%"/>
+    <translate
+        android:fromXDelta="0"
+        android:toXDelta="50%"
+        android:fromYDelta="0"
+        android:toYDelta="0"/>
+    <!--延时5秒后播放-->
+    <set android:startOffset="5000">
+        <translate
+            android:fromXDelta="0"
+            android:toXDelta="-50%"/>
+    </set>
+</set>

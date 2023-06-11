@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    showAsAction是定义此item在ActionBar中的位置，常用的有-->
+<!--    never 永远不会在标题栏上直接显示，必须手动点击菜单才会显示-->
+<!--    ifRoom 如果有空间就会在标题栏上显示，如果没有就需要手动点击菜单才会显示-->
+<!--    always 永远都在标题栏显示-->
+<!--    这里需要说一下：标题栏的菜单按钮，如果你的手机没有自带菜单按钮，那么在标题栏的最右边就会有3个竖直排列的小点；如果你的手机自带了，那么菜单按钮就是你手机上自带的那个-->
+<!--    ####orderInCategory：决定每个Item的次序-->
+
+    <item
+        android:id="@+id/menu_all"
+        app:showAsAction="always"
+        android:title="A">
+        <menu>
+            <item
+                android:id="@+id/menu_a"
+                app:showAsAction="never"
+                android:title="A"/>
+            <item
+                android:id="@+id/menu_p"
+                app:showAsAction="never"
+                android:title="P"/>
+            <item
+                android:id="@+id/menu_n"
+                app:showAsAction="never"
+                android:title="N"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".storage.StorageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/storage_file_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/storage_file_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save file"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/storage_file_get"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/pale_yellow"
+        android:text="点击。。。"
+        android:textSize="18sp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/storage_sp_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save SharedPreferences"/>
+    <TextView
+        android:id="@+id/storage_sp_get"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/pale_yellow"
+        android:text="点击。。。"
+        android:textSize="18sp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/storage_sp_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Delete SharedPreferences"/>
+</LinearLayout>

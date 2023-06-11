@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.intents.IntentActivity">
+    <Button
+        android:id="@+id/start_intent_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start_Intent_One"/>
+    <Button
+        android:id="@+id/start_intent_one_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start_Intent_One_Result"/>
+    <Button
+        android:id="@+id/start_intent_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start_Intent_Two"/>
+    <Button
+        android:id="@+id/start_intent_browser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start_Intent_Browser"/>
+    <Button
+        android:id="@+id/start_intent_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start_Intent_Phone"/>
+</LinearLayout>

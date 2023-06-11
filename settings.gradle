@@ -1,0 +1,8 @@
+include ':nfcapp'
+include ':ydhl_phz'
+include ':permissionlibrary'
+include ':weatherapp'
+include ':sqlitedatatest'
+include ':kotlinapp'
+include ':app'
+rootProject.name = "MyBase"

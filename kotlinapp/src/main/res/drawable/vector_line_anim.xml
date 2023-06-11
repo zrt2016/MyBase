@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vector_line">
+    <target
+        android:animation="@animator/object_vector_trimpathstart_anim"
+        android:name="v_line"/>
+</animated-vector>

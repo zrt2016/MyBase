@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp"
+    android:height="36dp"
+    android:tint="@color/white"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+<!--    pathData中主要有几种类型，M表示移动到某个点，L表示画线，A表示弧线，-->
+<!--    Q是二阶贝塞尔，C是三阶贝塞尔，Z表示闭合，V表示垂直，H表示水平-->
+<!--    Vector常用语法了解：-->
+<!--    M = moveto(M X,Y) ：将画笔移动到指定的坐标位置-->
+<!--    L = lineto(L X,Y) ：画直线到指定的坐标位置-->
+<!--    H = horizontal lineto(H X)：画水平线到指定的X坐标位置-->
+<!--    V = vertical lineto(V Y)：画垂直线到指定的Y坐标位置-->
+<!--    C = curveto(C X1,Y1,X2,Y2,ENDX,ENDY)：三次贝赛曲线-->
+<!--    S = smooth curveto(S X2,Y2,ENDX,ENDY):平滑曲线-->
+<!--    Q = quadratic Belzier curve(Q X,Y,ENDX,ENDY)：二次贝赛曲线-->
+<!--    T = smooth quadratic Belzier curveto(T ENDX,ENDY)：映射-->
+<!--    A = elliptical Arc(A RX,RY,XROTATION,FLAG1,FLAG2,X,Y)：弧线-->
+<!--    Z = closepath()：关闭路径-->
+
+    <path android:fillColor="@color/white"
+        android:strokeWidth="1"
+        android:pathData="M7,6 c0.55,0 1,0.45 1,1 v10c0,0.55 -0.45,1 -1,1s-1,-0.45 -1,-1L6,7c0,-0.55 0.45,-1 1,-1z M10.66,12.82l5.77,4.07c0.66,0.47 1.58,-0.01 1.58,-0.82L18.01,7.93c0,-0.81 -0.91,-1.28 -1.58,-0.82l-5.77,4.07c-0.57,0.4 -0.57,1.24 0,1.64z"/>
+
+
+</vector>

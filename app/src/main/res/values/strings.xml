@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">MyBase</string>
+    <string name="app_name_replace">MyBase_Replace</string>
+    <string name="title_activity_view_model">ViewModelActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="AC">AC</string>
+    <string name="AddDec">+/-</string>
+    <string name="equal">=</string>
+    <string name="add">+</string>
+    <string name="dec">-</string>
+    <string name="multi">*</string>
+    <string name="div">/</string>
+    <string name="Dot">.</string>
+    <string name="num0">0</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num6">6</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
+    <string name="num9">9</string>
+    <string name="BracketLeft">(</string>
+    <string name="BracketRight">)</string>
+    <string name="Mod">%</string>
+    <string name="Delete">删除</string>
+    <string name="C">C</string>
+
+    <!-- 语音识别相关 -->
+    <!-- 听写 -->
+    <!-- 语音识别app_id -->
+    <string name="app_id_iat">5bdbb91b</string>
+    <!-- 语音播报app_id -->
+    <string name="app_id_tts">56d7fe00</string>
+
+    <string name="text_begin">请开始说话&#8230;</string>
+
+    <!-- 语音播报 -->
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+    <string name="pref_key_translate">translate</string>
+    <string name="pref_title_translate">翻译</string>
+</resources>

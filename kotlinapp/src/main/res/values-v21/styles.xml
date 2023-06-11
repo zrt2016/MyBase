@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  注意在values目录下也要声明该NoAppTheme_StatusBar，否则会异常报错  -->
+    <style name="NoAppTheme_StatusBar" parent="NoAppTheme_Light">
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

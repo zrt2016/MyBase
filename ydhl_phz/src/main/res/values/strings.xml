@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">陪护证</string>
+    <string name="yiyuan_mingcheng">演示版</string>
+
+    <string name="title_activity_basic">BasicActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="exit_login">退出登录</string>
+    <string name="user_head_text">用户头像</string>
+    <string name="user_id_text">I D  </string>
+    <string name="user_name_text">姓名  </string>
+    <string name="yiyuan_name_textview">医院  </string>
+    <string name="suoshukeshi_text">病区  </string>
+    <string name="user_zhiwu">职务  </string>
+    <string name="current_version">版本  </string>
+    <string name="shebeihao">设备号  </string>
+    <string name="yinxiaoshezhi">音量设置  </string>
+    <string name="wangluo_ceshi">网络设置</string>
+    <string name="xunshi_remind_switch">巡视通知</string>
+    <string name="quick_data_download">快速同步</string>
+    <string name="runlog_upload">日志上传</string>
+    <string name="app_setting">系统设置</string>
+    <string name="xitong_shezhi">系统设置</string>
+
+    <string name="activity_login_username_hint">请输入账号</string>
+    <string name="activity_login_password_hint">请输入密码</string>
+    <string name="activity_login_button_text">登录</string>
+</resources>

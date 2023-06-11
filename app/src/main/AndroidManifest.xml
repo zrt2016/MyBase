@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zrt.mybase">
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 存储读写权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- WIFI设置权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 勿扰模式 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" /> -->
+    <!-- 安装 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.DateActivity"></activity>
+        <activity android:name=".activity.voice.VoiceActivity" />
+        <activity android:name=".activity.jisuanqi.Calculator2Activity" />
+        <activity android:name=".activity.jisuanqi.CalculatorActivity" />
+        <activity android:name=".activity.TextViewActivity" /> <!-- <activity -->
+        <!-- android:name=".SplashActivity" -->
+        <!-- android:theme="@style/SplashTheme"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity android:name=".SplashActivity" /> <!-- 设置别名2，特点情况 -->
+        <activity-alias
+            android:name=".Alias2Activity"
+            android:enabled="false"
+            android:icon="@mipmap/ic_launcher_replace"
+            android:label="@string/app_name_replace"
+            android:targetActivity=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias> <!-- 固定设置一个默认的别名(enabled="true")，用来替代原SplashActivity -->
+        <activity-alias
+            android:name=".DefaultAliasActivity"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:targetActivity=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <!--
+ 对于面向 Android 7.0 的应用，Android 框架执行的 StrictMode API 政策禁止在您的应用外部公开 file:// URI。
+        如果一项包含文件 URI 的 intent 离开您的应用，则应用出现故障，并出现 FileUriExposedException 异常。
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.zrt.mybase.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".base.TopTabActivity" />
+        <activity android:name=".activity.ViewShowActivity" />
+        <activity android:name=".activity.viewdemo.ConstraintLayoutActivity" />
+        <activity android:name=".activity.viewdemo.PercentLayoutActivity" />
+        <activity android:name=".activity.viewdemo.ImageBase64Activity" />
+        <activity android:name=".demo.TabDemoActivity" />
+        <activity android:name=".customviewdemo.SurfaceItemActivity" />
+        <activity
+            android:name=".activity.ActionBarActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.viewdemo.ToolbarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activity.IntentActivity" />
+        <activity android:name=".activity.viewpagers.ViewPagerActivity" />
+        <activity
+            android:name=".activity.viewmodels.ViewModelActivity"
+            android:label="@string/title_activity_view_model"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.viewdemo.WebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.AppIconReplaceActivity" />
+    </application>
+
+</manifest>

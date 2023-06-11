@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".animator.property_animation.PropertAdvancedActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1、PorpertyValuesHolder完成动画"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/a_p_a_btn_pvh_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="doPorpertyValuesHolder 完成旋转、淡化"/>
+            <TextView
+                android:id="@+id/a_p_a_tv_pvh_1"
+                android:text="doPorpertyValuesHolder"
+                style="@style/view_animation"/>
+            <Button
+                android:id="@+id/a_p_a_btn_pvh_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="doPorpertyValuesHolder 自定义动画"/>
+            <com.zrt.kotlinapp.animator.property_animation.CharTV
+                android:id="@+id/a_p_a_tv_pvh_2"
+                android:text="A"
+                style="@style/view_animation"/>
+            <Button
+                android:id="@+id/a_p_a_btn_pvh_kf1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="keyFrame 关键帧"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/a_p_a_tv_pvh_kf1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/phone"
+                    android:background="@android:color/transparent"/>
+                <ImageView
+                    android:id="@+id/a_p_a_tv_pvh_kf2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/phone"
+                    android:layout_marginLeft="50dp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/a_p_a_btn_pvh_kfi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:text="keyFrame 与 Interpolator "/>
+            <TextView
+                android:id="@+id/a_p_a_tv_pvh_kfi1"
+                android:text="keyFrame Interpolator"
+                style="@style/view_animation"
+                android:layout_gravity="left"/>
+            <Button
+                android:id="@+id/a_p_a_btn_pvh_kf_obj1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:text="keyFrame 与 Object 实现字符变换 "/>
+            <com.zrt.kotlinapp.animator.property_animation.CharTV
+                android:id="@+id/a_p_a_tv_pvh_obj1"
+                android:text="A"
+                style="@style/view_animation" />
+            <Button
+                android:id="@+id/a_p_a_btn_pvh_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:text="电话响铃完整动画"/>
+            <ImageView
+                android:id="@+id/a_p_a_tv_pvh_all"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/phone"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2、ViewPropertyAnimator动画"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/a_p_a_btn_vpa_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ViewPropertyAnimator 完成旋转、淡化、平移、缩放"/>
+            <TextView
+                android:id="@+id/a_p_a_tv_vpa_1"
+                android:text="doViewPropertyAnimator"
+                style="@style/view_animation"/>
+            <TextView
+                android:id="@+id/a_p_a_tv_vpa_2"
+                android:text="doViewPropertyAnimator"
+                style="@style/view_animation"/>
+            <Button
+                android:id="@+id/a_p_a_btn_alc_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="animateLayoutChanges 添加"/>
+            <Button
+                android:id="@+id/a_p_a_btn_alc_del"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="animateLayoutChanges 删除"/>
+            <LinearLayout
+                android:id="@+id/a_p_a_btn_alc_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:animateLayoutChanges="true"/>
+
+            <Button
+                android:id="@+id/a_p_a_btn_lt_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="LayoutTransition 添加动画"/>
+            <Button
+                android:id="@+id/a_p_a_btn_lt_del"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="LayoutTransition 删除"/>
+            <LinearLayout
+                android:id="@+id/a_p_a_btn_lt_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+            <Button
+                android:id="@+id/a_p_a_btn_lt_ca_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="LayoutTransition CHANGE_APPEARING 添加"/>
+            <Button
+                android:id="@+id/a_p_a_btn_lt_cd_del"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="LayoutTransition CHANGE_DISAPPEARING 删除"/>
+            <LinearLayout
+                android:id="@+id/a_p_a_btn_lt_change_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

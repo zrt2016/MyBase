@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_view.custom_basic.view_shijianfenfa.ViewEventActivity">
+    <com.zrt.kotlinapp.activity_view.custom_basic.view_shijianfenfa.EventViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:background="@color/orange">
+        <com.zrt.kotlinapp.activity_view.custom_basic.view_shijianfenfa.EventView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/green1"/>
+    </com.zrt.kotlinapp.activity_view.custom_basic.view_shijianfenfa.EventViewGroup>
+    <com.zrt.kotlinapp.activity_view.custom_basic.view_shijianfenfa.EventView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/green1"/>
+</LinearLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".animator.view_animation.ViewAnimationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="补间动画 （Tween Animation）"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="一、XML动画文件配置实现"/>
+
+        <Button
+            android:id="@+id/a_v_a_scale_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="scale animation"/>
+        <TextView
+            android:id="@+id/a_v_a_scale_tv_1"
+            android:text="Scale"
+            style="@style/view_animation"/>
+        <TextView
+            android:id="@+id/a_v_a_scale_tv_2"
+            android:text="Scale pivot 50"
+            style="@style/view_animation"/>
+        <TextView
+            android:id="@+id/a_v_a_scale_tv_3"
+            android:text="Scale pivot 50%"
+            style="@style/view_animation"/>
+        <TextView
+            android:id="@+id/a_v_a_scale_tv_4"
+            android:text="Scale pivot 50%p"
+            style="@style/view_animation"/>
+        <!--淡化动画-->
+        <Button
+            android:id="@+id/a_v_a_alpha_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="alpha animation"/>
+        <TextView
+            android:id="@+id/a_v_a_alpha_tv_1"
+            android:text="alpha"
+            style="@style/view_animation"/>
+
+        <!--旋转动画-->
+        <Button
+            android:id="@+id/a_v_a_rotate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="rotate animation"/>
+        <TextView
+            android:id="@+id/a_v_a_rotate_tv_1"
+            android:text="rotate"
+            style="@style/view_animation"/>
+        <TextView
+            android:id="@+id/a_v_a_rotate_tv_2"
+            android:text="rotate pivot 50"
+            style="@style/view_animation"/>
+        <TextView
+            android:id="@+id/a_v_a_rotate_tv_3"
+            android:text="rotate pivot 50%"
+            style="@style/view_animation"/>
+        <TextView
+            android:id="@+id/a_v_a_rotate_tv_4"
+            android:text="rotate pivot 50%p"
+            style="@style/view_animation"/>
+
+        <!--平移动画-->
+        <Button
+            android:id="@+id/a_v_a_translate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="translate animation"/>
+        <TextView
+            android:id="@+id/a_v_a_translate_tv_1"
+            android:text="Translate"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <TextView
+            android:id="@+id/a_v_a_translate_tv_2"
+            android:text="Translate fromxdelta 50"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <TextView
+            android:id="@+id/a_v_a_translate_tv_3"
+            android:text="Translate fromxdelta 50%"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <TextView
+            android:id="@+id/a_v_a_translate_tv_4"
+            android:text="Translate fromxdelta 50%p"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <!--set动画集合-->
+        <Button
+            android:id="@+id/a_v_a_set_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="set animation"/>
+        <TextView
+            android:id="@+id/a_v_a_set_tv_1"
+            android:text="set"
+            style="@style/view_animation"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="二、代码实现动画配置"/>
+        <Button
+            android:id="@+id/a_v_a_scale_btn_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="scale animation"/>
+        <TextView
+            android:id="@+id/a_v_a_scale_tv_code_1"
+            android:text="Scale Code"
+            style="@style/view_animation"/>
+
+        <Button
+            android:id="@+id/a_v_a_alpha_btn_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="alpha animation"/>
+        <TextView
+            android:id="@+id/a_v_a_alpha_tv_code_1"
+            android:text="alpha Code"
+            style="@style/view_animation"/>
+        <Button
+            android:id="@+id/a_v_a_rotate_btn_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="rotate animation"/>
+        <TextView
+            android:id="@+id/a_v_a_rotate_tv_code_1"
+            android:text="rotate Code"
+            style="@style/view_animation"/>
+        <Button
+            android:id="@+id/a_v_a_translate_btn_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="translate animation"/>
+        <TextView
+            android:id="@+id/a_v_a_translate_tv_code_1"
+            android:text="translate Code"
+            style="@style/view_animation"/>
+        <Button
+            android:id="@+id/a_v_a_set_btn_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="set animation"/>
+        <TextView
+            android:id="@+id/a_v_a_set_tv_code_1"
+            android:text="set Code"
+            style="@style/view_animation"/>
+        <Button
+            android:id="@+id/a_v_a_attribute_btn_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="animation函数和监听"/>
+        <TextView
+            android:id="@+id/a_v_a_attribute_tv_code_1"
+            android:text="attribute Code"
+            style="@style/view_animation"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="插值器（Interpolator）"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/a_v_a_btn_adi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="AccelerateDecelerate 插值器"/>
+        <TextView
+            android:id="@+id/a_v_a_tv_adi"
+            android:text="AccelerateDecelerate"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <Button
+            android:id="@+id/a_v_a_btn_ai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Accelerate 插值器"/>
+        <TextView
+            android:id="@+id/a_v_a_tv_ai"
+            android:text="Accelerate"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <Button
+            android:id="@+id/a_v_a_btn_di"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Decelerate 插值器"/>
+        <TextView
+            android:id="@+id/a_v_a_tv_di"
+            android:text="Decelerate"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <Button
+            android:id="@+id/a_v_a_btn_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Linear 插值器"/>
+        <TextView
+            android:id="@+id/a_v_a_tv_li"
+            android:text="Linear"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <Button
+            android:id="@+id/a_v_a_btn_bi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Bounce 插值器"/>
+        <TextView
+            android:id="@+id/a_v_a_tv_bi"
+            android:text="Bounce"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <Button
+            android:id="@+id/a_v_a_btn_anticipatei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="anticipate 插值器"/>
+        <TextView
+            android:id="@+id/a_v_a_tv_anticipatei"
+            android:text="anticipate"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <Button
+            android:id="@+id/a_v_a_btn_oi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Overshoot 插值器"/>
+        <TextView
+            android:id="@+id/a_v_a_tv_oi"
+            android:text="Overshoot"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <Button
+            android:id="@+id/a_v_a_btn_aoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="anticipateOvershoot 插值器"/>
+        <TextView
+            android:id="@+id/a_v_a_tv_aoi"
+            android:text="anticipateOvershoot"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+        <Button
+            android:id="@+id/a_v_a_btn_ci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Cycle 插值器"/>
+        <TextView
+            android:id="@+id/a_v_a_tv_ci"
+            android:text="Cycle"
+            style="@style/view_animation"
+            android:layout_gravity="left|center_vertical"/>
+
+        <Button
+            android:id="@+id/a_v_a_frame_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="逐帧动画"/>
+        <ImageView
+            android:id="@+id/a_v_a_frame_tv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/frame_anim_list"
+            style="@style/view_animation"/>
+    </LinearLayout>
+</ScrollView>
