@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_view.custom_basic.matrix_basic.MatrixBasicActivity">
+    tools:context=".activity_view.custom_view_basic.matrix_basic.MatrixBasicActivity">
     <ScrollView
         android:id="@+id/a_c_b_scroll"
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <com.zrt.kotlinapp.activity_view.custom_basic.matrix_basic.ColorMatrixView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.matrix_basic.ColorMatrixView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"/>
             <View

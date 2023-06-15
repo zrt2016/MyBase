@@ -21,10 +21,10 @@ class BounceLoadingView: LinearLayout {
     constructor(context: Context):this(context, null)
     constructor(context: Context, attrs: AttributeSet?):this(context, attrs, 0)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int):super(context, attrs, defStyleAttr) {
-        View.inflate(context, R.layout.view_loading_bounce, null)
+        val view = View.inflate(context, R.layout.view_loading_bounce, this)
         mContext = context
-        shapeLoadingView = findViewById(R.id.shapeLoadingView)
-        indication = findViewById(R.id.indication)
+        shapeLoadingView = view.findViewById(R.id.shapeLoadingView)
+        indication = view.findViewById(R.id.indication)
     }
 
 }

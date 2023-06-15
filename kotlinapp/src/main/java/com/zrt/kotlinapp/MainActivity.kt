@@ -8,9 +8,10 @@ import com.zrt.kotlinapp.activitys.intents.IntentActivity
 import com.zrt.kotlinapp.activity_view.MenuActivity
 import com.zrt.kotlinapp.activity_view.UIActivity
 import com.zrt.kotlinapp.activity_view.actionbar.TitleActivity
-import com.zrt.kotlinapp.activity_view.custom_basic.CustomViewNavigationActivity
-import com.zrt.kotlinapp.activity_view.custom_basic.view_shijianfenfa.ViewEventActivity
-import com.zrt.kotlinapp.activity_view.custom_basic.ViewScrollActivity
+import com.zrt.kotlinapp.activity_view.custom_view.CustomViewNavigationActivity
+import com.zrt.kotlinapp.activity_view.custom_view_basic.CustomViewBasicNavigationActivity
+import com.zrt.kotlinapp.activity_view.custom_view_basic.view_shijianfenfa.ViewEventActivity
+import com.zrt.kotlinapp.activity_view.custom_view_basic.ViewScrollActivity
 import com.zrt.kotlinapp.activity_view.listview.LVActivity
 import com.zrt.kotlinapp.activity_view.material_design.*
 import com.zrt.kotlinapp.activity_view.recyclerview.RecyclerViewActivity
@@ -95,6 +96,7 @@ class MainActivity : BasicActivity() {
         dataMap.put(main_ViewScroll.id, ViewScrollActivity::class.java)
         dataMap.put(main_Animator.id, AnimationBasicActivity::class.java)
         dataMap.put(main_ViewEvent.id, ViewEventActivity::class.java)
+        dataMap.put(main_CustomView_baisc.id, CustomViewBasicNavigationActivity::class.java)
         dataMap.put(main_CustomView.id, CustomViewNavigationActivity::class.java)
 
 //        main_btn1.setOnClickListener {

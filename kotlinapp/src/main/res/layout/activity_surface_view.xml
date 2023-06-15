@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_view.custom_basic.canvas_basic.SurfaceViewActivity">
+    tools:context=".activity_view.custom_view_basic.canvas_basic.SurfaceViewActivity">
     <ScrollView
         android:id="@+id/a_c_b_scroll"
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.RectRefreshSurfaceView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.RectRefreshSurfaceView
                 android:layout_width="match_parent"
                 android:layout_height="400dp"/>
             <View
@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
                 android:text="使用SurfaceView 实现手势轨迹View"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.GesturePathSurfaceView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.GesturePathSurfaceView
                 android:layout_width="match_parent"
                 android:layout_height="300dp"/>
             <View
@@ -42,14 +42,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
                 android:text="使用SurfaceView 实现背景平移View"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.AnimaSurfaceView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.AnimaSurfaceView
                 android:layout_width="match_parent"
                 android:layout_height="400dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.DoubleBufferSurfaceView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.DoubleBufferSurfaceView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"/>
 

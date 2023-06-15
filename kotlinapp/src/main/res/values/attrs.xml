@@ -94,4 +94,17 @@
             <enum name="region" value="5"/>
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="TabListLayout">
+        <attr name="topVisibility">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="bottomVisibility">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
 </resources>

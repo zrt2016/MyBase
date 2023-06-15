@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_view.custom_basic.bezier_basic.BezierCurveActivity">
-    <com.zrt.kotlinapp.activity_view.custom_basic.bezier_basic.BezierRobeView
+    tools:context=".activity_view.custom_view_basic.bezier_basic.BezierCurveActivity">
+    <com.zrt.kotlinapp.activity_view.custom_view_basic.bezier_basic.BezierRobeView
         android:layout_width="match_parent"
         android:layout_height="300dp"/>
     <View
@@ -20,28 +20,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <com.zrt.kotlinapp.activity_view.custom_basic.bezier_basic.BezierTwoView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.bezier_basic.BezierTwoView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.bezier_basic.BezierGestureTrackView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.bezier_basic.BezierGestureTrackView
                 android:layout_width="match_parent"
                 android:layout_height="400dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.bezier_basic.BezierAnimWareView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.bezier_basic.BezierAnimWareView
                 android:layout_width="match_parent"
                 android:layout_height="400dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.bezier_basic.BezierRobeView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.bezier_basic.BezierRobeView
                 android:layout_width="match_parent"
                 android:layout_height="300dp"/>
             <View

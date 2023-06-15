@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_view.custom_basic.view_basic.MappingAdvancedActivity">
+    tools:context=".activity_view.custom_view_basic.view_basic.MappingAdvancedActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <com.zrt.kotlinapp.activity_view.custom_basic.paint_basic.PaintShadowLayerView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.paint_basic.PaintShadowLayerView
                 android:id="@+id/a_p_b_psl_view"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"/>

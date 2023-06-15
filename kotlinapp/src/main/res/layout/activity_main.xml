@@ -470,6 +470,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/main_Animator"
                 />
             <Button
+                android:id="@+id/main_CustomView_baisc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="main_CustomViewBasic"
+                android:onClick="onClick"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main_ViewEvent"
+                />
+            <Button
                 android:id="@+id/main_CustomView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -477,9 +487,8 @@
                 android:onClick="onClick"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_ViewEvent"
+                app:layout_constraintTop_toBottomOf="@+id/main_CustomView_baisc"
                 />
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

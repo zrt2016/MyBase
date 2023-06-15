@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_view.custom_basic.view_basic.MappingBasicActivity">
+    tools:context=".activity_view.custom_view_basic.view_basic.MappingBasicActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -17,7 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="剪裁动画"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.ClipRgnView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.ClipRgnView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 app:background="@mipmap/mao"/>
@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="使用动画完成剪裁效果"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.ClipRgnAnimView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.ClipRgnAnimView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 app:clipAnimBg="@mipmap/mao"/>
@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Paint基础"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.MPaintView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.MPaintView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 app:mRadius="20dp"/>
@@ -41,35 +41,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Path基础"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.PathView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.PathView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Paint基础"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.PaintTextView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.PaintTextView
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="蛛网图"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.CobwebView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.CobwebView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Region基础"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.RegionView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.RegionView
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Canvas基础"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.CanvasView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.CanvasView
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"/>
             <!--点击变颜色-->
@@ -77,14 +77,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Rect点击变色"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.RectPointView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.RectPointView
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Round圆形图像"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.RoundHeadView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.RoundHeadView
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 app:header="@mipmap/nv"/>

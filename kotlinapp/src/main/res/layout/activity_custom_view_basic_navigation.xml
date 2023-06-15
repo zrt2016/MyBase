@@ -2,9 +2,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a_cv_n_frame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/a_c_v_frame"
-    tools:context=".activity_view.custom_view.CustomViewNavigationActivity">
+    tools:context=".activity_view.custom_view_basic.CustomViewBasicNavigationActivity">
 
 </FrameLayout>

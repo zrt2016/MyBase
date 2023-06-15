@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_view.custom_basic.view_basic.CustomViewTwoActivity">
+    tools:context=".activity_view.custom_view_basic.view_basic.CustomViewTwoActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -22,7 +22,7 @@
                 android:shadowDx="10"
                 android:shadowDy="10"
                 android:shadowColor="@color/red"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.BasicViewGroup
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.BasicViewGroup
                 android:id="@+id/a_c_v_two_bvg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:text="第三个View"/>
-            </com.zrt.kotlinapp.activity_view.custom_basic.view_basic.BasicViewGroup>
+            </com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.BasicViewGroup>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
@@ -52,7 +52,7 @@
                 android:text="流式布局"
                 android:textSize="18sp"
                 android:layout_marginLeft="10dp"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.CustomFlowLayout
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.CustomFlowLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/a_c_V_two_flow">
@@ -97,16 +97,16 @@
                     android:background="@drawable/flow_layout_flag_03"
                     android:text="I thick i can"
                     android:textColor="@android:color/white" />
-            </com.zrt.kotlinapp.activity_view.custom_basic.view_basic.CustomFlowLayout>
+            </com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.CustomFlowLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.CustomFlowLayout2
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.CustomFlowLayout2
                 android:id="@+id/a_c_V_two_flow2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            </com.zrt.kotlinapp.activity_view.custom_basic.view_basic.CustomFlowLayout2>
+            </com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.CustomFlowLayout2>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="5dp"

@@ -15,4 +15,8 @@
     <color name="red">#ff0000</color>
     <color name="gray_light">#dddddd</color>
 
+    <color name="violet">#FF9C9CD8</color>
+    <color name="violet_dark">#FF6D6EAA</color>
+    <color name="transparent">#00000000</color>
+
 </resources>

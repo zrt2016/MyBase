@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_view.custom_basic.paint_basic.PaintMixedModeActivity">
+    tools:context=".activity_view.custom_view_basic.paint_basic.PaintMixedModeActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -25,7 +25,7 @@
                 android:textSize="22dp"
                 android:textStyle="bold"
                 android:text="一、AvoidXfermode 类使用（未查询到该类）"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.paint_basic.PaintAvoidXfermodeView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.paint_basic.PaintAvoidXfermodeView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"/>
             <View
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.paint_basic.PaintPorterDuffXfermodeView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.paint_basic.PaintPorterDuffXfermodeView
                 android:id="@+id/a_p_m_m_porterduff"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"/>
@@ -76,7 +76,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:text="2、PorterDuff.Mode.LENGTEN 实现开灯效果"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.paint_basic.PaintPDXLightenView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.paint_basic.PaintPDXLightenView
                 android:id="@+id/a_p_m_m_lighten"
                 android:layout_width="200dp"
                 android:layout_height="200dp"/>
@@ -90,7 +90,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:text="3、PorterDuff.Mode.MULTIPLY 实现2张图片描边效果"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.paint_basic.PaintTwitterMultiplyView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.paint_basic.PaintTwitterMultiplyView
                 android:id="@+id/a_p_m_m_TwitterMultiply"
                 android:layout_width="200dp"
                 android:layout_height="200dp"/>
@@ -100,7 +100,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:text="4、PorterDuff.Mode.SRC_IN 给目标图片添加圆角边框"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.paint_basic.PaintPDXBasicView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.paint_basic.PaintPDXBasicView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 app:dstBitmap="@mipmap/dog_shade"
@@ -110,28 +110,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.paint_basic.PaintInvertedSrcInView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.paint_basic.PaintInvertedSrcInView
                 android:layout_width="200dp"
                 android:layout_height="200dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.paint_basic.PaintEraserSrcOutView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.paint_basic.PaintEraserSrcOutView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.paint_basic.PaintPDXWaveDstInView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.paint_basic.PaintPDXWaveDstInView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.paint_basic.PaintPDXIrregularDstInView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.paint_basic.PaintPDXIrregularDstInView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"/>
             <View

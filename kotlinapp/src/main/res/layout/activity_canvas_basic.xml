@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_view.custom_basic.canvas_basic.CanvasBasicActivity">
+    tools:context=".activity_view.custom_view_basic.canvas_basic.CanvasBasicActivity">
     <ScrollView
         android:id="@+id/a_c_b_scroll"
         android:layout_width="match_parent"
@@ -14,21 +14,21 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.Canvas_MATRIX_SAVE_FLAG_View
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.Canvas_MATRIX_SAVE_FLAG_View
                 android:layout_width="match_parent"
                 android:layout_height="200dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.CanvasRestoreToCountView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.CanvasRestoreToCountView
                 android:layout_width="match_parent"
                 android:layout_height="300dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.ShapeView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.ShapeView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 app:shape="rect"/>
@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.ShapeView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.ShapeView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 app:shape="arc"/>
@@ -44,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.ShapeView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.ShapeView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 app:shape="oval"/>
@@ -52,7 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.ShapeView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.ShapeView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 app:shape="roundRect"/>
@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.ShapeView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.ShapeView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 app:shape="path"/>
@@ -68,7 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.ShapeView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.ShapeView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 app:shape="region"/>
@@ -76,14 +76,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.ShapePaintShaderView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.ShapePaintShaderView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.ShapeTelescopeView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.ShapeTelescopeView
                 android:id="@+id/a_c_b_shaoe_telescope"
                 android:layout_width="match_parent"
                 android:layout_height="800dp"/>
@@ -183,7 +183,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:background="@color/orange"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.canvas_basic.CanvasStrokeImage
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.canvas_basic.CanvasStrokeImage
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:src="@mipmap/cat_dog"

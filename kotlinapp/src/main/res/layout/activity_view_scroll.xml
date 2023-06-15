@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity_view.custom_basic.ViewScrollActivity">
-    <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.ScrollLayoutView
+    tools:context=".activity_view.custom_view_basic.ViewScrollActivity">
+    <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.ScrollLayoutView
         android:id="@+id/a_v_s_view"
         android:layout_width="40dp"
         android:layout_height="40dp"

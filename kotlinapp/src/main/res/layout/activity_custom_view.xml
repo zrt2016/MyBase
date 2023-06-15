@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_view.custom_basic.view_basic.CustomViewActivity">
-    <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.InvalidTextView
+    tools:context=".activity_view.custom_view_basic.view_basic.CustomViewActivity">
+    <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.InvalidTextView
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
@@ -20,31 +20,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.RectView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.RectView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="5dp"
                 android:padding="10dp"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.RectView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.RectView
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 app:rect_color="@color/black"
                 android:padding="10dp"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.RectView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.RectView
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
                 app:rect_color="@color/green1"
                 android:padding="10dp"/>
-            <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.RectView
+            <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.RectView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:rect_color="@color/orange"
                 android:layout_marginTop="5dp"/>
         </LinearLayout>
 <!--    </HorizontalScrollView>-->
-    <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.TitleBar
+    <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.TitleBar
         android:id="@+id/a_c_v_mtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.zrt.kotlinapp.activity_view.custom_basic.view_basic.HorizontalView
+        <com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.HorizontalView
             android:layout_width="match_parent"
             android:layout_height="400dp">
             <ListView
@@ -65,7 +65,7 @@
                 android:id="@+id/lv_two"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"></ListView>
-        </com.zrt.kotlinapp.activity_view.custom_basic.view_basic.HorizontalView>
+        </com.zrt.kotlinapp.activity_view.custom_view_basic.view_basic.HorizontalView>
 
     </RelativeLayout>
 </LinearLayout>
