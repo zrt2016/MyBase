@@ -7,8 +7,18 @@
     android:orientation="vertical"
     tools:context=".activity_view.custom_view.loading_view.LoadingActivity">
     <com.zrt.kotlinapp.activity_view.custom_view.loading_view.BounceLoadingView
+        android:id="@+id/a_load_bounce"
         android:layout_width="match_parent"
         android:layout_height="200dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/orange"/>
+    <FrameLayout
+        android:id="@+id/a_load_frame_bounce"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"/>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
