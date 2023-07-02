@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity_view.custom_view.CustomViewNavigationActivity"></activity>
+        <activity android:name=".activity_view.custom_view.loading_view.LoadingActivity"></activity>
+        <activity android:name=".activity_view.custom_view.CustomViewNavigationActivity" />
         <activity android:name=".activity_view.custom_view.zuhe_view.TabListActivity" />
         <activity android:name=".activity_view.custom_view_basic.view_basic.CustomViewTwoActivity" />
         <activity android:name=".activity_view.custom_view_basic.matrix_basic.MatrixBasicActivity" />

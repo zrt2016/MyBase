@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.zrt.kotlinapp.BasicActivity
 import com.zrt.kotlinapp.R
+import com.zrt.kotlinapp.activity_view.custom_view.loading_view.LoadingActivity
 import com.zrt.kotlinapp.activity_view.custom_view.zuhe_view.TabListActivity
 import com.zrt.kotlinapp.activity_view.custom_view_basic.CustomViewBasicNavigationActivity
 import com.zrt.kotlinapp.activity_view.recyclerview.decoration.DividerItemDecoration
@@ -68,5 +69,6 @@ class CustomViewNavigationActivity : BasicActivity() {
 
     fun initList(){
         mList.add(CustomViewBasicNavigationActivity.CustomViewNavigation("TabList", TabListActivity::class.java))
+        mList.add(CustomViewBasicNavigationActivity.CustomViewNavigation("Loading View", LoadingActivity::class.java))
     }
 }

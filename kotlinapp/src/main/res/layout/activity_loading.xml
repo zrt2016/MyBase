@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_view.custom_view.loading_view.LoadingActivity">
+    <com.zrt.kotlinapp.activity_view.custom_view.loading_view.BounceLoadingView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/orange"/>
+    <com.zrt.kotlinapp.activity_view.custom_view.loading_view.GraphChangeLoadingView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
     <ImageView
         android:id="@+id/shapeLoadingView"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="4dp" />
+        android:layout_marginTop="4dp"
+        android:background="@color/orange"/>
+    <com.zrt.kotlinapp.activity_view.custom_view.loading_view.GraphChangeLoadingView
+        android:id="@+id/shapeLoadingView2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"/>
 
     <ImageView
         android:id="@+id/indication"
         android:layout_width="23dp"
         android:layout_height="3dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="82dp" />
+        android:layout_marginTop="82dp"
+        android:background="@color/black"/>
 <!--    android:src="@drawable/shadow"-->
 
     <TextView
